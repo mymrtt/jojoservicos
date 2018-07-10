@@ -1,0 +1,72 @@
+*,
+*:after,
+*:before{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	min-height: 96vh;
+	margin: 0;
+	display: flex;
+	/*border-color: #69B42E;*/
+}
+.caixa_inicial{
+	width: 100%;
+	/*height: auto;*/
+	background-color: #2E7BB4;
+	flex-direction: column;
+	    position: absolute;
+    height: 100%;
+    /*width: 100%;*/
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.caixa_inicial-left{
+	width: 30%;
+	min-height: 85vh;
+	margin: 0 5%;
+	background-color: red;
+	/*justify-content: center;
+	align-items: center;*/
+	text-align: center;
+}
+/*.caixa_inicial-right{
+	width: 20vw;
+	border:solid red;
+
+}*/
+.caixa_inicial-titulo{
+	font-family: Helvetica Bold;
+	font-size: 2em;
+	color: #FFFFFF;
+}
+.caixa_inicial-descrição{
+	font-family: Helvetica;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+.caixa_inicial-fixo{
+	width: 100vw;
+	min-height: 15vh;
+	border-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding: 0 2%;
+	align-items: center;
+	background-color: #FFFFFF;
+	position: relative;
+	z-index:1;
+	/*top: 0;*/
+}
+.caixa_inicial-fixoTexto{
+	color: #3358A4;
+	font-family: Helvetica;
+	font-size: 1em;
+}
+.caixa_inicial-fixoLogo{
+	width: 10vw;
+}

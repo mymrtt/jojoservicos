@@ -1,0 +1,18 @@
+@font-face{
+	font-family: Helvetica Bold;
+	src:url(fonts/Helvetica Bold.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family: Helvetica;
+	src:url(fonts/Helvetica-Normal.ttf);
+	font-family: 400;
+}
+@font-face{
+	font-family: Museo;
+	src:url(fonts/museo-300.otf);
+}
+@font-face{
+	font-family: Museo Regular;
+	src:url(fonts/Museo700-Regular.otf);
+}
