@@ -9,9 +9,9 @@
 </head>
 
 <body>
-	<section class="caixa_inicial-fixo">
-		<img class="caixa_inicial-fixoLogo" src="assets/logo-jojo.png">
-		<p class="caixa_inicial-fixoTexto">Resolver seus problemas nunca foi tão simples.</p>
+	<section class="caixa_topo">
+		<img class="caixa_topo--logo" src="assets/logo-jojo.svg">
+		<p class="caixa_topo--texto">Resolver seus problemas nunca foi tão simples.</p>
 	</section>
 	<section class="caixa_inicial">
 		<div class="caixa_inicial-left">
@@ -19,14 +19,34 @@
 			<p class="caixa_inicial-descrição">A Jojô ajuda você a superar os contratempos burocráticos em poucos passos!</p>
 		</div>
 		<div class="caixa_inicial-right">
-			
+			<div class="caixa_inicial-perfil">
+				<img class="caixa_inicial-right--img" src="assets/perfil.jpg">
+				<p class="caixa_inicial-right--p">Fale com a Jojô!</p>
+			</div>
+			<div class="caixa_inicial--dialogo">
+				
+			</div>
+			<div class="caixa_inicial--envio">
+				<input  class = " comentarios-input " 
+				  v-model = " novoComentario "
+				  placeholder = ' Digite sua mensagem '
+				  v-on : keyup . enter = " comentar " >
+			</div>
 		</div>
 	</section>
-	<main>
-		
-	</main>
-	<footer>
-		
+	<footer class="caixa_rodape">
+		<div class="caixa_rodape--Sobre">
+			<p class="caixa_rodape--titulo">Sobre</p>
+			<p class="caixa_rodape--descricao">Jojo Serviços surgiu com o propósito de solucionar as dificuldades pessoais de cada cliente. Dessa forma, os serviços oferecidos são capazes de facilitar a vida pessoal e profissional dos usuários.</p>
+		</div>
+		<div class="caixa_rodape--informações">
+			<p class="caixa_rodape--contato">Rua 1STi Soluções, 34 - sala 3 Rio de Janeiro - RJ</p>
+			<span class="caixa_rodape--fone">(21) 97931-0198<br> (21) 2447-2804</span>
+		</div>
+		<div class="caixa_rodape--icones">
+			<img class="caixa_rodape--img" src="assets/facebook_logo.svg">
+			<img class="caixa_rodape--img" src="assets/whatsapp.svg">		
+		</div>
 	</footer>
 	<script type="text/javascript" src="main.js"></script>
 </body>
