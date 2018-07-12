@@ -59,14 +59,16 @@ body{
 	border:solid none;
 	border-radius: 10%;
 	background-color: #F7F7F7;
-	display: flex;
-	align-self: center;
+	/*display: flex;
+	align-self: center;*/
 }
 .caixa_inicial-perfil{
-	width: 20vw;
-	height: 20vh;
+	width: 23vw;
+	height: 13vh;
+	margin-top: -30px;
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-end;
 }
 .caixa_inicial-right--img{
 	width: 7vw;
@@ -78,20 +80,148 @@ body{
 .caixa_inicial-right--p{
 	width: 10vw;
 	height:5vh;
-	/*background-color: red;*/
-	margin: -4% -8%;
+	/*margin: -4% -8%;*/
 	font-family: Museo Regular;
 	color: #FFFFFF;
 	font-size: 1em;
+	white-space: nowrap;
 }
-.caixa_inicial--envio{
-	width: 90vw;
+.caixa_inicial--usuario{
+	width: 50%;
 	height: auto;
 	display: flex;
 	align-self: flex-end;
 }
+.caixa_inicial--dialogo{
+	width: 50%;
+	/*margin-left: 5%;*/
+    height: auto;
+}
+.caixa_inicial--conversacao{
+	width: 100%;
+	height: auto;
+	padding-bottom: 10px;
+}
+.caixa_inicial--dialogo1{
+	width: 9vw;
+	min-height: 3.8vh;
+	font-family: Museo-500;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	text-align: center;
+	/*border-color:#69B42E;*/
+	border-radius: 20px 0 20px 20px;
+	border:solid none;
+	background-color: #69B42E;
+}
+.caixa_inicial--dialogo2{
+	width: 12vw;
+	min-height: 3.8vh;
+	white-space: normal;
+	font-family: Museo-500;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	text-align: center;
+	border-radius: 0 20px 20px 20px;
+	border:solid #3358A4;
+	background-color: #3358A4;
+}
+.caixa_inicial--rg{
+	width: 20vw;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+.caixa_inicial--rgItens{
+	width: 13vw;
+	height: 11vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: justify;
+}
+.caixa_inicial--emprego{
+	width: 20vw;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	/*background-color:red;*/
+	justify-content: space-between;
+
+}
+.caixa_inicial--empregoItens{
+	width: 13vw;
+    height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: black;*/
+}
+.caixa_inicial--iconeEmprego{
+	width: 4vw;
+	display: flex;
+	align-self: flex-start;
+}
+.caixa_inicial--negocios{
+	width: 20vw;
+    height: auto;
+    /*background-color: rebeccapurple;*/
+    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+.caixa_inicial--negociosItens{
+	width: 13vw;
+    height: 9.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: red;*/
+}
+.caixa_inicial--iconeNegocios{
+width: 4vw;
+	display: flex;
+	align-self: flex-start;	
+}
+.caixa_inicial--button{
+	min-width: 13vw;
+	min-height: 5vh;
+	font-family: Museo-500;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	text-align: center;
+	border-radius: 20px;
+	border:solid none;
+	background-color: #3358A4;
+}
+.caixa_inicial--button:hover{
+	background-color: #69B42E;
+}
+.caixa_inicial--info{
+	min-width: 12vw;
+	font-family: Museo-500;
+	color: #3358A4;
+	font-size: 0.6em;
+}
+.caixa_inicial--icone{
+	width: 10vw;
+	height: 5vw;
+}
+.caixa_inicial--envio{
+	min-width: 40vw;
+    min-height: 10vh;
+    /*margin-top: 32%;*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
 .comentarios-input{
-	width: 30vw;
+	width: 90%;
 	height: 5vh;
 	margin: 0 0 0 0;
 	border: solid #337DA4 1px;
