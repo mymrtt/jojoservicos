@@ -1,11 +1,6 @@
 @font-face{
-	font-family: Helvetica Bold;
-	src:url(fonts/Helvetica Bold.ttf);
-	font-weight: 400;
-}
-@font-face{
 	font-family: Helvetica;
-	src:url(fonts/Helvetica-Normal.ttf);
+	src:url(fonts/HELR45W.ttf);
 	font-family: 400;
 }
 @font-face{
