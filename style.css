@@ -16,7 +16,7 @@ body{
 .caixa_topo{
 	width: 100vw;
 	height: 12vh;
-	padding: 0 2%;
+	padding: 0 3%;
 	border-style: none;
 	display: flex;
 	flex-direction: row-reverse;
@@ -45,6 +45,7 @@ body{
 }
 .caixa_topo--logo{
 	width: 10vw;
+	padding-right: 2%;
 }
 @media (max-width: 640px){
 	.caixa_topo--logo{
@@ -77,6 +78,8 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	align-items:center;
+	/*background-color: pink;*/
 }
 @media (max-width: 640px){
 	.caixa_inicial-left{
@@ -111,7 +114,7 @@ body{
 }
 .caixa_inicial-descrição{
 	width: 18vw;
-	margin: 10% 0 0 20%;
+	margin: 10% 0 0 0;
 	font-family: Helvetica;
 	font-size: 1em;
 	color: #FFFFFF;
@@ -196,11 +199,17 @@ body{
 	}
 }
 .caixa_inicial--usuario{
-	width: 95%;
-	height: auto;
-	margin-left: 80%;
+	width: 10vw;
+	height: 5vh;
+	margin-right: 40px;
 	display: flex;
-	justify-content:flex-end;
+	justify-content:center;
+	align-items: center;
+	border-radius: 20px 0 20px 20px;
+	border:solid none;
+	background-color: #69B42E;
+	flex-grow:0;
+	text-align: center;
 }
 @media(max-width: 640px){
 	.caixa_initial--usuario{
@@ -208,43 +217,57 @@ body{
 	}
 }
 .caixa_inicial--dialogo{
-	width: 50%;
-	margin: -32px 0 0 5%;
-    height: 40vh;
+	width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    /*background-color: pink;*/
+    justify-content: space-between;
 }
 .caixa_inicial--conversacao{
-	width: 100%;
-	height: auto;
+	width: 14vw;
+	height: 15vh;
 	padding-bottom: 10px;
+	margin: 0 0 5% 0;
+	border-radius: 0 20px 20px 20px;
+	border:solid #3358A4;
+	background-color: #3358A4;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
 }
 .caixa_inicial--dialogo1{
-	width: 9vw;
-	min-height: 3.8vh;
+	/*width: 9vw;*/
+	/*min-height: 3.8vh;*/
 	font-family: Museo-500;
 	color: #FFFFFF;
 	font-size: 0.9em;
-	text-align: center;
+	text-align: left;
 	/*border-color:#69B42E;*/
-	border-radius: 20px 0 20px 20px;
-	border:solid none;
-	background-color: #69B42E;
+	
 }
 @media(max-width: 640px){
 	.caixa_inicial--dialogo1{
 		width: 30vw;
 	}
 }
+.caixa_inicial--columnEsqueda{
+	width: 60%;
+	height: auto;
+	margin: 50px 0 0 5%;
+	display: flex;
+	flex-direction: column;
+	/*background-color: red;*/
+}
 .caixa_inicial--dialogo2{
 	width: 12vw;
 	min-height: 3.8vh;
-	white-space: normal;
+	/*white-space: normal;*/
 	font-family: Museo-500;
 	color: #FFFFFF;
 	font-size: 0.9em;
-	text-align: center;
-	border-radius: 0 20px 20px 20px;
-	border:solid #3358A4;
-	background-color: #3358A4;
+	text-align: left;
 }
 @media(max-width: 640px){
 	.caixa_inicial--dialogo2{
@@ -295,11 +318,11 @@ body{
 .caixa_inicial--negocios{
 	width: 20vw;
     height: auto;
-    /*background-color: rebeccapurple;*/
-    justify-content: space-between;
-	display: flex;
-	flex-direction: row;
 	padding-top: 10px;
+    /*background-color: rebeccapurple;*/
+	display: flex;
+    justify-content: space-between;
+	flex-direction: row;
 }
 .caixa_inicial--negociosItens{
 	width: 13vw;
@@ -325,6 +348,7 @@ width: 4vw;
 	border-radius: 20px;
 	border:solid none;
 	background-color: #3358A4;
+	/*background: linear-gradient(0deg,#3358A4,#3260A8,#306BAD,#2E7BB4);*/
 }
 .caixa_inicial--button:hover{
 	background-color: #69B42E;
@@ -336,28 +360,43 @@ width: 4vw;
 	font-size: 0.6em;
 }
 .caixa_inicial--icone{
-	width: 10vw;
-	height: 5vw;
+	width: 7vw;
+	height: 7vw;
 }
 .caixa_inicial--envio{
-	min-width: 40vw;
-    min-height: 10vh;
-    margin-top: 15%;
+	width: 100%;
+    height: 5vh;
+    margin-top: 5%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+	/*align-items: flex-end;*/
+	/*align-items: center;*/
+	align-self: center;
+	border: solid #337DA4 1px;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+
 }
 .comentarios-input{
 	width: 90%;
-	height: 5vh;
+	height: 4vh;
 	margin: 0 0 20px 0;
-	border: solid #337DA4 1px;
-	border-radius: 20px;
+	border:none;
 }
 @media(max-width: 1440px){
 	.comentarios-input{
 		margin: 0 0 -10px 0;
+		padding-left: 20px;
 	}
+}
+.imput-img{
+	width:3vw;
+	height:5vh;
+	display: flex;
+	justify-content: center;
+	/*align-self: flex-start;*/
+	/*align-items: flex-start;*/
+	padding: 0 0 0 0;
 }
 .caixa_rodape{
 	width: 100%;
