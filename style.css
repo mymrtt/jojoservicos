@@ -182,9 +182,8 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_inicial-boot--img{
-		width: 100px;
+		max-width: 100px;
 		height: auto;
-		/*height: 10vh;*/
 	}
 }
 .caixa_inicial-boot--p{
