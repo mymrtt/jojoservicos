@@ -210,7 +210,7 @@ body{
     /*background-color: pink;*/
     justify-content: space-between;
 }
-.caixa_inicial--columnEsqueda{
+.caixa_inicial--conversacao{
 	width: 60%;
 	height: auto;
 	margin: 50px 0 0 5%;
@@ -219,11 +219,11 @@ body{
 	/*background-color: red;*/
 }
 @media(max-width: 640px){
-	.caixa_inicial--columnEsqueda{
+	.caixa_inicial--conversacao{
 		width: 70%;
 	}
 }
-.caixa_inicial--conversacao{
+.caixa_inicial--mensagem{
 	width: 100%;
 	padding: 6px;
 	margin: 0 0 5% 0;
@@ -235,8 +235,8 @@ body{
 	align-items: center;
 }
 @media(max-width: 640px){
-	.caixa_inicial--conversacao{
-		width: 35vw;
+	.caixa_inicial--mensagem{
+		/*width: 35vw;*/
 	}
 }
 .caixa_inicial--dialogo2{
@@ -317,7 +317,7 @@ body{
 	display: flex;
 	align-self: flex-start;	
 }
-.caixa_inicial--usuario{
+.caixa_inicial--mensagem_{
 	width: 10vw;
 	height: 5vh;
 	margin-right: 40px;
@@ -331,7 +331,7 @@ body{
 	text-align: center;
 }
 @media(max-width: 640px){
-	.caixa_inicial--usuario{
+	.caixa_inicial--mensagem_{
 		width: 40vw;
 		margin-right: 20px;
 	}
@@ -424,6 +424,11 @@ body{
 	/*align-self: flex-start;*/
 	/*align-items: flex-start;*/
 	padding: 0 0 0 0;
+}
+@media(max-width: 640px){
+	.imput-img{
+		width: 5vw;
+	}
 }
 .caixa_rodape{
 	width: 100%;
