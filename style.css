@@ -412,6 +412,7 @@ body{
 }
 @media(max-width: 1440px){
 	.comentarios-input{
+		height: 25px;
 		margin: 0 0 -10px 0;
 		padding-left: 20px;
 	}
