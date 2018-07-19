@@ -405,7 +405,7 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_inicial--info{
-		width: 210px;
+		width: 190px;
     	font-size: 3vw;
 	}
 }
