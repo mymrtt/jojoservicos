@@ -347,7 +347,7 @@ body{
 	font-size: 0.8em;
 	text-align: center;
 	border-radius: 20px;
-	border: none;
+	border:solid none;
 	background-color: #3358A4;
 }
 @media(max-width: 640px){
@@ -398,6 +398,7 @@ body{
 @media(max-width: 640px){
 	.caixa_inicial--envio{
 		height: 5.2vh;
+	}
 }
 .comentarios-input{
 	width: 90%;
@@ -431,7 +432,9 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape{
-		display: none;
+		height: auto;
+		display: flex;
+		flex-direction: column;
 	}
 }
 .caixa_rodape--Sobre{
@@ -442,6 +445,14 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	}
+@media(max-width: 640px){
+	.caixa_rodape--Sobre{
+		width: 100%;
+		margin: 20px 0;
+		display: flex;
+		flex-direction: column;
+	}
+}
 .caixa_rodape--titulo{
 	height:4vh;
 	font-family: Helvetica;
@@ -450,11 +461,25 @@ body{
 	color: #3358A4;
 	box-shadow: 0.1px 8px 0 0 #69B42E;
 }
+@media(max-width: 640px){
+	.caixa_rodape--titulo{
+		margin: 0 0 30px 0;
+		/*display: flex;
+    	align-self: flex-start*/
+	}
+}
 .caixa_rodape--descricao{
 	width: 20vw;
 	font-family: Helvetica;
 	font-size: 0.8em;
 	line-height: 1.5em;
+}
+@media(max-width: 640px){
+	.caixa_rodape--descricao{
+    	width: 300px;
+    	padding: 0 0 0 10px;
+		font-size: 4vw;
+	}
 }
 .caixa_rodape--informações{
 	width: 20vw;
@@ -463,6 +488,11 @@ body{
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+}
+@media(max-width: 640px){
+	.caixa_rodape--informações{
+		width: 100%;
+	}
 }
 .caixa_rodape--contato{
 	width: 20vw;
@@ -475,6 +505,11 @@ body{
 	flex-direction: column;
 	justify-content: space-around;
 }
+@media(max-width: 640px){
+	.caixa_rodape--contato{
+		width: 261px;
+	}
+}
 .caixa_rodape--fone{
 	padding-top: 4%;
 	font-family: Helvetica;
@@ -486,8 +521,20 @@ body{
 	flex-direction: row;
 	align-items: center;
 }
+@media(max-width: 640px){
+	.caixa_rodape--icones{
+		width: 100%;
+	    display: flex;
+	    justify-content: space-around;
+		}
+}
 .caixa_rodape--img{
 	width: 3vw;
 	height: 5vh;
 	margin: 0 20% 0 0;
+}
+@media(max-width: 640px){
+	.caixa_rodape--img{
+		width: 30px;
+	}
 }
