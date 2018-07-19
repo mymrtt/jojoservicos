@@ -149,10 +149,9 @@ body{
 }
 @media (max-width: 640px){
 	.caixa_inicial-boot{
-		width: 280px;
+		width: 90vw;
 		height: auto;
 		border-radius: 50px;
-		/*white-space: nowrap;*/
 	}
 }
 .caixa_inicial-perfil{
@@ -298,7 +297,7 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_inicial--opcao-rg{
-		width: 100%;
+		width: 80vw;
 	    display: flex;
 	    justify-content: center;
 		}
@@ -310,6 +309,13 @@ body{
 	align-items: center;
 	justify-content: space-between;
 	text-align: justify;
+}
+@media(max-width: 640px){
+	.caixa_inicial--rgItens{
+		width: 60vw;
+		display: flex;
+		align-items: flex-start;
+	}
 }
 .caixa_inicial--emprego{
 	width: 20vw;
@@ -399,7 +405,7 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_inicial--info{
-		width: 190px;
+		width: 230px;
     	font-size: 3vw;
 	}
 }
