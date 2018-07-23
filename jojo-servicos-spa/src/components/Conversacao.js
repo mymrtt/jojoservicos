@@ -2,27 +2,14 @@ import React from 'react';
 
 import Mensagem from '../components/Mensagem';
 
-const Conversacao = () =>
-  <div class="caixa_inicial--conversacao">
-    <Mensagem emissor="bot">
-      Olá, em que posso ajudar Olá, em que posso ajudar Olá, em que posso ajudar
-    </Mensagem>
-
-    <Mensagem emissor="usuario">
-      Oi, sou o Pedro
-    </Mensagem>
-
-    <Mensagem emissor="bot">
-      Em que posso ajudar
-    </Mensagem>
-
-    <Mensagem emissor="usuario">
-      Eu preciso tirar a segunda via de meu RG
-    </Mensagem>
-
-    <Mensagem emissor="bot">
-      Você tem a original?
-    </Mensagem>
+const Conversacao = (props) =>
+  <div className="caixa_inicial--conversacao">
+    {
+      props.mensagensBot.map((item) => 
+        <Mensagem emissor={item.emissor === "bot" ? "bot" : "usuario"} key={item.textId}>
+          {item.text}
+        </Mensagem>)
+    }
   </div>;
 
 export default Conversacao;
