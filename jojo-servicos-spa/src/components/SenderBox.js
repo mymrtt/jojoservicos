@@ -37,6 +37,7 @@ class SenderBox extends Component{
           onClick={this.enviarMensagem} 
           className="imput-img" 
           type="image" 
+          alt="enviar msg"
           src="./seta.png" 
           value="ENVIAR" /> 
       </div>

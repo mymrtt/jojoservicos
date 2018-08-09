@@ -223,8 +223,7 @@ body{
 .conversacao--mensagem{
   flex-grow: 1;
   max-width: 300px;
-  min-height: 50px;
-  margin: 10px 0;
+  margin: 2px 0;
   padding: 10px;
   border:0;
   color: #FFF;

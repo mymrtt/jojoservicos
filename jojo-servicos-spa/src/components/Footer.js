@@ -20,10 +20,10 @@ const Footer = () =>
       </span>
     </div>
     <div className="caixa_rodape--icones">
-    <a href="https://www.facebook.com/JojoServicos/" target="_blank" >
-      <img className="caixa_rodape--img" src="facebook_logo.svg" />
+    <a href="https://www.facebook.com/JojoServicos/" target="_blank" rel="noopener noreferrer" >
+      <img className="caixa_rodape--img" src="facebook_logo.svg" alt='facebook logo' />
     </a>
-    <img className="caixa_rodape--img" src="whatsapp.svg" />		
+    <img className="caixa_rodape--img" src="whatsapp.svg" alt='whatsapp' />		
     </div>
   </footer>;
 

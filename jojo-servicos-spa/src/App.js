@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import sendUserSays from './services/api.js';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MensagemBoasVindas from './components/MensagemBoasVindas';
-import Mensagem from './components/Mensagem';
-import BotaoDeOpcao from './components/BotaoDeOpcao';
 import SenderBox from './components/SenderBox';
 import Conversacao from './components/Conversacao';
 
@@ -31,9 +30,23 @@ class App extends Component {
   }
   enviarMensagemUsr(text){
     console.log(text);
+    sendUserSays(text)
+    .then(res => {
+      console.log(res);
+      console.log(res.data.result);
+      this.setState(
+        {
+          mensagens: [...this.state.mensagens, {
+            text: res.data.result.fulfillment.speech, 
+            textId: res.data.id, 
+            emissor:"bot"}]
+        }
+      );
+    });
+    
     this.setState(
       {
-        mensagens: [...this.state.mensagens, {text: text, textId:"text", emissor:"usuario"}]
+        mensagens: [...this.state.mensagens, {text: text, textId: new Date().getTime(), emissor:"usuario"}]
       }
     );
   }
@@ -47,7 +60,7 @@ class App extends Component {
           </div>
           <div className="caixa_inicial-boot">
             <div className="caixa_inicial-perfil">
-              <img className="caixa_inicial-boot--img" src="./perfil.jpg" />
+              <img className="caixa_inicial-boot--img" src="./perfil.jpg" alt="perfil" />
               <p className="caixa_inicial-boot--p">Fale com a Jojô!</p>
             </div>
             <div className="caixa_inicial--dialogo">
