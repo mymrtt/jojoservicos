@@ -7,8 +7,7 @@ const Footer = () =>
         Sobre
       </p>
       <p className="caixa_rodape--descricao">
-        Agendamento de seguro desemprego, inss, RG, CPF, título de eleitor, elaboração de currículos, indica advogados de todas as áreas, profissionais.
-      </p>
+      Nossa missão é  ajudar as pessoas a resgatarem  a sua cidadania, e a resolverem seus problemas burocráticos em relação a diversos documentos.      </p>
     </div>
     <div className="caixa_rodape--informações">
       <p className="caixa_rodape--contato">
@@ -23,7 +22,6 @@ const Footer = () =>
     <a href="https://www.facebook.com/JojoServicos/" target="_blank" rel="noopener noreferrer" >
       <img className="caixa_rodape--img" src="facebook_logo.svg" alt='facebook logo' />
     </a>
-    <img className="caixa_rodape--img" src="whatsapp.svg" alt='whatsapp' />		
     </div>
   </footer>;
 

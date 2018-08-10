@@ -3,7 +3,7 @@ import React from 'react';
 const Mensagem = () =>
   <div className="caixa_inicial-boasvindas">
     <h1 className="caixa_inicial-titulo">
-      Pode ficar tranquilo,<br /> 
+      Fique tranquilo,<br /> 
       você encontrou a Jojô
     </h1>
     <h1 className="caixa_inicial-tituloMobile">
@@ -11,11 +11,16 @@ const Mensagem = () =>
       você encontrou a Jojô
     </h1>
     <p className="caixa_inicial-descrição">
-      A Jojô ajuda você a superar os contratempos burocráticos em poucos passos!
+    Vou ajudar você a superar os seus problemas burocráticos!
+
     </p>
     <p className="caixa_inicial-descriçãoMobile">
       Vou ajudar você a superar os seus problemas burocráticos!
-    </p>			
+    </p>	
+    <div className="caixa_inicial-indicacao">
+     <img className="imgdeCompartilhar" src="share.png" />
+      <p>Indique para um amigo</p>
+    </div>		
   </div>;
 
 export default Mensagem;

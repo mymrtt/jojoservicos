@@ -61,7 +61,7 @@ body{
 	flex-direction: row;
     border-top: solid #69B42E;
     border-bottom: solid #69B42E;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 @media (max-width: 640px){
 	.caixa_inicial{
@@ -93,7 +93,7 @@ body{
 	font-family: Helvetica;
 	font-size: 2em;
 	color: #FFFFFF;
-	font-weight: bold;
+	line-height: 1.4em;
 }
 @media (max-width: 640px){
 	.caixa_inicial-titulo{
@@ -114,10 +114,10 @@ body{
 	}
 }
 .caixa_inicial-descrição{
-	width: 18vw;
+	width: 20vw;
 	margin: 10% 0 0 0;
 	font-family: Helvetica;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #FFFFFF;
 	line-height: 1.4em;
 }
@@ -140,6 +140,19 @@ body{
 		line-height: 1.4em;
 	}
 }
+.caixa_inicial-indicacao{
+	width: 20vw;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	color: #FFF;
+	font-family:Helvetica;
+	/* padding-top: 90px; */
+}
+.imgdeCompartilhar{
+	width: 20px;
+	height: 20px;
+}
 .caixa_inicial-boot{
 	min-width: 50vw;
 	min-height: 55vh;
@@ -153,6 +166,7 @@ body{
 	.caixa_inicial-boot{
 		width: 90vw;
 		height: auto;
+		margin-bottom: 60px;
 		border-radius: 50px;
 	}
 }
@@ -404,7 +418,7 @@ body{
 }
 .caixa_inicial--envio{
 	position: absolute;
-	bottom: -10px;
+	bottom: -18px;
 	width: 90%;
 	height: 40px;
 	margin:0 5%;
@@ -424,7 +438,10 @@ body{
 	margin: 0 0 20px 0;
 	border:none;
 	font-size: 18px;
-	
+	outline: none;
+	/* background-color: transparent;
+	color: #F7F7F7; */
+	opacity: 0.5;
 }
 @media(max-width: 1440px){
 	.comentarios-input{
@@ -434,7 +451,9 @@ body{
 }
 .imput-img{
 	width:20px;
+	height: 30px;
 	padding: 0;
+    margin: 5px 0 0 10px;
 	display: flex;
 	justify-content: center;
 }
@@ -547,8 +566,7 @@ body{
 		}
 }
 .caixa_rodape--img{
-	width: 3vw;
-	height: 5vh;
+	width: 35px;
 	margin: 0 20% 0 0;
 }
 @media(max-width: 640px){
