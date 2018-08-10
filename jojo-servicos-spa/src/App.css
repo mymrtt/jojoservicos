@@ -143,7 +143,7 @@ body{
 .caixa_inicial-boot{
 	min-width: 50vw;
 	min-height: 55vh;
-    margin: 4% 0;
+    margin: 7% 0;
 	border:solid none;
 	border-radius: 40px;
 	background-color: #F7F7F7;
@@ -157,11 +157,12 @@ body{
 	}
 }
 .caixa_inicial-perfil{
-	width: 23vw;
+	width: 10vw;
 	height: 13vh;
 	margin-top: -30px;
 	display: flex;
 	flex-direction: row;
+	/* background-color: red; */
 	/*justify-content: flex-end;*/
 }
 @media(max-width: 640px){
@@ -172,11 +173,9 @@ body{
 
 }
 .caixa_inicial-boot--img{
-	min-width: 7vw;
 	width: 90px;
 	height: 90px;
 	margin: -12% 13%;
-	margin: -4% 10%;
 	border:solid #69B42E 5px;
 	border-radius: 50%;
 }
@@ -185,20 +184,6 @@ body{
 		width: 90px;
 		height: 90px;
 		margin-left: 8px;
-	}
-}
-.caixa_inicial-boot--p{
-	width: 10vw;
-	height:5vh;
-	/*margin: -4% -8%;*/
-	font-family: Museo Regular;
-	color: #FFFFFF;
-	font-size: 1em;
-	white-space: nowrap;
-}
-@media(max-width: 640px){
-	.caixa_inicial-boot--p{
-		font-size: 4.5vw;
 	}
 }
 .caixa_inicial--dialogo{
@@ -438,7 +423,8 @@ body{
 	border-radius:14px; 
 	margin: 0 0 20px 0;
 	border:none;
-	font-size: 18px
+	font-size: 18px;
+	
 }
 @media(max-width: 1440px){
 	.comentarios-input{
