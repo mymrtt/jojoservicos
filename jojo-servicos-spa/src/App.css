@@ -61,7 +61,8 @@ body{
 	flex-direction: row;
     border-top: solid #69B42E;
     border-bottom: solid #69B42E;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
+	align-items: center;
 }
 @media (max-width: 640px){
 	.caixa_inicial{
@@ -73,14 +74,15 @@ body{
 		align-items: center;
 	}
 }
-.caixa_inicial-boasvindas{
+.caixa_inicial-boasvindas-1{
 	min-width: 30%;
-	min-height: 25vh;
+	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	text-align: center;
 	align-items:center;
+	/* background-color: rebeccapurple; */
 }
 @media (max-width: 640px){
 	.caixa_inicial-boasvindas{
@@ -88,6 +90,13 @@ body{
 		display: flex;
 		align-items: center;
 	}
+}
+.teste{
+	height: 45vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
 }
 .caixa_inicial-titulo{
 	font-family: Helvetica;
@@ -115,7 +124,7 @@ body{
 }
 .caixa_inicial-descrição{
 	width: 20vw;
-	margin: 10% 0 0 0;
+	margin-bottom: 14%;
 	font-family: Helvetica;
 	font-size: 1.2em;
 	color: #FFFFFF;
@@ -147,7 +156,6 @@ body{
 	justify-content:space-evenly;
 	color: #FFF;
 	font-family:Helvetica;
-	/* padding-top: 90px; */
 }
 .imgdeCompartilhar{
 	width: 20px;
@@ -189,7 +197,7 @@ body{
 .caixa_inicial-boot--img{
 	width: 90px;
 	height: 90px;
-	margin: -12% 13%;
+	margin: -12% 0 0 -20%; 
 	border:solid #69B42E 5px;
 	border-radius: 50%;
 }
@@ -477,8 +485,8 @@ body{
 	}
 }
 .caixa_rodape--Sobre{
-	width: 28vw;
-	padding: 0 0 0 0;
+	width: 35vw;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -506,7 +514,7 @@ body{
 	}
 }
 .caixa_rodape--descricao{
-	width: 20vw;
+	width: 23vw;
 	font-family: Helvetica;
 	font-size: 0.8em;
 	line-height: 1.5em;
