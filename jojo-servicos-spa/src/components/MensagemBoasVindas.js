@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mensagem = () =>
   <div className="caixa_inicial-boasvindas-1">
-    <div className="teste">
+    <div className="caixa_inicial--bloco1">
       <h1 className="caixa_inicial-titulo">
         Fique tranquilo,<br /> 
         você encontrou a Jojô

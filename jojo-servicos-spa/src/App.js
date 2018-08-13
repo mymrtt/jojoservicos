@@ -68,6 +68,10 @@ class App extends Component {
             </div>
             <SenderBox funcaoEnviar={this.enviarMensagemUsr} />
           </div>
+          <div className="caixa_inicial-indicacao-mobile">
+            <img className="imgdeCompartilhar" src="share.png" />
+            <p>Indique para um amigo</p>
+          </div>
         </section>
         <Footer />
       </div>

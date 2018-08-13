@@ -7,7 +7,7 @@ const Footer = () =>
         Sobre
       </p>
       <p className="caixa_rodape--descricao">
-      Nossa missão é  ajudar as pessoas a resgatarem  a sua cidadania, e a resolverem seus problemas burocráticos em relação a diversos documentos.      </p>
+      Nossa missão é  ajudar as pessoas a resgatarem  a sua cidadania,  em relação a diversos documentos. </p>
     </div>
     <div className="caixa_rodape--informações">
       <p className="caixa_rodape--contato">

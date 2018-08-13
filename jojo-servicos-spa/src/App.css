@@ -86,17 +86,24 @@ body{
 }
 @media (max-width: 640px){
 	.caixa_inicial-boasvindas{
-		margin-bottom: 40px;
+		margin:0;
 		display: flex;
 		align-items: center;
 	}
 }
-.teste{
+.caixa_inicial--bloco1{
 	height: 45vh;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 	align-items: center;
+}
+@media (max-width: 640px){
+	.caixa_inicial--bloco1{
+		display: flex;
+		justify-content: center;
+
+	}
 }
 .caixa_inicial-titulo{
 	font-family: Helvetica;
@@ -156,6 +163,27 @@ body{
 	justify-content:space-evenly;
 	color: #FFF;
 	font-family:Helvetica;
+}
+@media(max-width:640px){
+	.caixa_inicial-indicacao{
+		display: none;
+	}
+}
+.caixa_inicial-indicacao-mobile{
+	display: none;
+	width: 70vw;
+	flex-direction: row;
+	justify-content:space-evenly;
+	color: #FFF;
+	font-family:Helvetica;
+	font-size: 15px;
+}
+@media(max-width:640px){
+	.caixa_inicial-indicacao-mobile{
+		display: flex;
+		margin-bottom: 15%;
+		
+	}
 }
 .imgdeCompartilhar{
 	width: 20px;
@@ -234,7 +262,7 @@ body{
   padding: 10px;
   border:0;
   color: #FFF;
-  font-family: Museo-500;
+  font-family: Helvetica;
 }
 .conversacao--mensagem__bot{
   border-radius: 0px 20px 20px 20px;
@@ -271,7 +299,7 @@ body{
 .caixa_inicial--dialogo1{
 	/*width: 9vw;*/
 	/*min-height: 3.8vh;*/
-	font-family: Museo-500;
+	font-family: Helvetica;
 	color: #FFFFFF;
 	font-size: 0.9em;
 	text-align: left;
@@ -300,7 +328,7 @@ body{
 	}
 }
 .caixa_inicial--dialogo2{
-	font-family: Museo-500;
+	font-family: Helvetica;
 	color: #FFFFFF;
 	font-size: 0.9em;
 	text-align: left;
@@ -381,7 +409,7 @@ body{
 }
 .caixa_inicial--button{
   width: 100%;
-	font-family: Museo-500;
+	font-family: Helvetica;
 	color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -403,7 +431,7 @@ body{
 .caixa_inicial--info{
 	padding: 6px;
 	width: 100%;
-	font-family: Museo-500;
+	font-family: Helvetica;
 	color: #3358A4;
 	font-size: 14px;
 	text-align: left;
@@ -498,6 +526,7 @@ body{
 		margin: 20px 0;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 .caixa_rodape--titulo{
@@ -510,7 +539,7 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--titulo{
-		margin: 0 0 30px 0;
+		margin: 0 0 30px 20px;
 	}
 }
 .caixa_rodape--descricao{
@@ -522,7 +551,7 @@ body{
 @media(max-width: 640px){
 	.caixa_rodape--descricao{
     	width: 300px;
-    	padding: 0 0 0 10px;
+    	padding: 0 0 0 20px;
 		font-size: 4vw;
 	}
 }
@@ -569,6 +598,7 @@ body{
 @media(max-width: 640px){
 	.caixa_rodape--icones{
 		width: 100%;
+		margin: 15% 0;
 	    display: flex;
 	    justify-content: center;
 		}
