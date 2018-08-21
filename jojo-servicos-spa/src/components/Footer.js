@@ -7,7 +7,7 @@ const Footer = () =>
         Sobre
       </p>
       <p className="caixa_rodape--descricao">
-      Nossa missão é  ajudar as pessoas a resgatarem  a sua cidadania,  em relação a diversos documentos. </p>
+      Quem hoje em dia não encontra dificuldades para resolver suas documentações? Fazer um currículo atrativo para o mercado de trabalho, ou tornar-se um empreendedor através do MEI? Caso você precise dessas respostas, entre em contato conosco e conheça os nossos serviços. </p>
     </div>
     <div className="caixa_rodape--informações">
       <p className="caixa_rodape--contato">
@@ -22,6 +22,11 @@ const Footer = () =>
     <a href="https://www.facebook.com/JojoServicos/" target="_blank" rel="noopener noreferrer" >
       <img className="caixa_rodape--img" src="facebook_logo.svg" alt='facebook logo' />
     </a>
+    </div>
+    <div className="caixa_rodape--creditos">
+      <p className="creditos--vencedor">Jojô Serviços - vencedora do StartupIN Favela 2018</p>
+      <p className="creditos--desenvolvido">Desenvolvido por 1STi e Estúdio Vai na Web</p>
+      
     </div>
   </footer>;
 

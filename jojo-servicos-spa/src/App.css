@@ -163,6 +163,13 @@ body{
 	justify-content:space-evenly;
 	color: #FFF;
 	font-family:Helvetica;
+	border: none;
+    /* padding: 0; */
+    background-color: transparent;
+    cursor: pointer;
+    /* padding-right: 8px; */
+	/* vertical-align: middle; */
+	outline: none;
 }
 @media(max-width:640px){
 	.caixa_inicial-indicacao{
@@ -487,11 +494,12 @@ body{
 }
 .imput-img{
 	width:20px;
-	height: 30px;
+	height: 25px;
 	padding: 0;
-    margin: 5px 0 0 10px;
+    margin: 7px 0 0 10px;
 	display: flex;
 	justify-content: center;
+	outline: none;
 }
 @media(max-width: 640px){
 	.imput-img{
@@ -612,4 +620,25 @@ body{
 		width: 30px;
 		margin: 0;
 	}
+}
+.caixa_rodape--creditos{
+	width: 25vw;
+	height: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* background: pink; */
+	line-height: 1.2em;
+
+}
+.creditos--vencedor{
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size:0.8em;
+
+}
+.creditos--desenvolvido{
+	font-family: Helvetica;
+	font-size:0.8em;
 }
