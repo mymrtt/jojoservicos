@@ -2,7 +2,7 @@
   "name": "jojo-servicos-spa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jamesdasilva.github.io/demo-build/jojo/build/",
+  "homepage": "https://jojo-servicos.firebaseapp.com/",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.1",
@@ -17,12 +17,11 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",
     "@storybook/addon-links": "^3.4.8",
-    "@storybook/react": "^3.4.8",
-    "gh-pages": "^1.2.0"
+    "@storybook/react": "^3.4.8"
   }
 }
