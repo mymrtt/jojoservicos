@@ -26,7 +26,12 @@ const Footer = () =>
     <div className="caixa_rodape--creditos">
       <p className="creditos--vencedor">Jojô Serviços - vencedora do StartupIN Favela 2018</p>
       <p className="creditos--desenvolvido">Desenvolvido por 1STi e Estúdio Vai na Web</p>
-      
+      <div className="caixa_rodape--logos">
+        <img className="rodape_logos" src="logo-startupin.png" />
+        <img className="rodape_logos" src="1sti.svg"/>
+        <img className="rodape_logos" src="logo-studio.png"/>
+
+      </div>
     </div>
   </footer>;
 

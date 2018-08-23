@@ -22,16 +22,18 @@ const Mensagem = () =>
     <button className="caixa_inicial-indicacao">
      <img className="imgdeCompartilhar" src="share.png" />
       <p>Indique para um amigo</p>
-      <ul>
+      {/* <ul>
           <li>
-            <a href="http://twitter.com/share" class="twitter-share-button" 
+            <a href="http://twitter.com/share?jamesdasilva.github.io/demo-build/jojo/build/" target="_balck" class="twitter-share-button" 
 data-url="www.devmedia.com.br" data-text="Teste" data-count="horizontal" data-via="aqui-seu-nome-de-usuario-do-twitter" data-lang="pt">Tweetar</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
 </script>
           </li>
+        <li>
+        </li>
         <li></li>
-        <li></li>
-      </ul>
+      </ul> */}
+      
     </button>		
   </div>;
 

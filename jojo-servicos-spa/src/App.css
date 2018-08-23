@@ -628,9 +628,8 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* background: pink; */
+	align-items: center;
 	line-height: 1.2em;
-
 }
 .creditos--vencedor{
 	font-family: Helvetica;
@@ -641,4 +640,15 @@ body{
 .creditos--desenvolvido{
 	font-family: Helvetica;
 	font-size:0.8em;
+}
+.caixa_rodape--logos{
+	width: 20vw;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+.rodape_logos{
+	width: 60px;
+	height: 30px;
+	margin-top: 20px;
 }
