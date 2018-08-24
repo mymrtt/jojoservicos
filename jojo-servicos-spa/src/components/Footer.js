@@ -11,7 +11,7 @@ const Footer = () =>
     </div>
     <div className="caixa_rodape--informações">
       <p className="caixa_rodape--contato">
-        Rua Nova Brasília nº 2 Bonsucesso 3º andar. (Associação dos Moradores da Nova Brasília)
+      Rua Nova Brasília, 34 - sala 3 Rio de Janeiro - RJ 
       </p>
       <span className="caixa_rodape--fone">
         (21) 99209-3995<br/> 
@@ -23,13 +23,24 @@ const Footer = () =>
       <img className="caixa_rodape--img" src="facebook_logo.svg" alt='facebook logo' />
     </a>
     </div>
+    <div className="caixa_rodape--informações-mobile">
+      <p className="caixa_rodape--contato">
+      Rua Nova Brasília, 34 - sala 3 Rio de Janeiro - RJ 
+      </p>
+      <span className="caixa_rodape--fone">
+        (21) 99209-3995<br/> 
+        (21) 98718-2442
+      </span>
+    </div>
     <div className="caixa_rodape--creditos">
       <p className="creditos--vencedor">Jojô Serviços - vencedora do StartupIN Favela 2018</p>
       <p className="creditos--desenvolvido">Desenvolvido por 1STi e Estúdio Vai na Web</p>
       <div className="caixa_rodape--logos">
         <img className="rodape_logos" src="logo-startupin.png" />
-        <img className="rodape_logos" src="1sti.svg"/>
-        <img className="rodape_logos" src="logo-studio.png"/>
+        <a class="rodape-parceiros-apoio__logos-link" href="http://www.1sti.com.br/" target="_blank">
+          <img className="rodape_logos" src="1sti.svg"/></a>
+        <a class="rodape-creditos__link" href="https://estudiovnw.github.io/estudio/" target="_blank">
+          <img className="rodape_logos" src="logo-studio.png"/></a>
 
       </div>
     </div>

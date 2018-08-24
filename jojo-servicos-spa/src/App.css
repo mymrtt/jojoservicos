@@ -86,7 +86,7 @@ body{
 }
 @media (max-width: 640px){
 	.caixa_inicial-boasvindas{
-		margin:0;
+		margin:-90px 0 0 0;
 		display: flex;
 		align-items: center;
 	}
@@ -553,7 +553,7 @@ body{
 .caixa_rodape--descricao{
 	width: 23vw;
 	font-family: Helvetica;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	line-height: 1.5em;
 }
 @media(max-width: 640px){
@@ -573,14 +573,29 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--informações{
-		width: 100%;
+		display: none;
 	}
+	
+}
+.caixa_rodape--informações-mobile{
+	display: none;
+	
+}
+@media(max-width: 640px){
+	.caixa_rodape--informações-mobile{
+		width: 100%;
+		margin: 5% 0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}	
 }
 .caixa_rodape--contato{
-	width: 20vw;
+	width: 13vw;
 	padding: 0;
 	font-family: Helvetica;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	text-align: center;
 	line-height: 1.5em;
 	display: flex;
@@ -589,13 +604,20 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--contato{
-		width: 261px;
+		width: 150px;
+		
 	}
 }
 .caixa_rodape--fone{
 	padding-top: 4%;
 	font-family: Helvetica;
-	font-size: 0.9em;
+	font-size: 0.75em;
+	line-height: 1.5em;
+}
+@media(max-width:640px){
+	.caixa_rodape--fone{
+		margin-bottom: 10%;
+	}
 }
 .caixa_rodape--icones{
 	padding: 0 0 0 0;
@@ -605,19 +627,19 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--icones{
-		width: 100%;
-		margin: 15% 0;
+		width: 90%;
+		margin: 5%;
 	    display: flex;
 	    justify-content: center;
 		}
 }
 .caixa_rodape--img{
-	width: 35px;
+	width: 28px;
 	margin: 0 20% 0 0;
 }
 @media(max-width: 640px){
 	.caixa_rodape--img{
-		width: 30px;
+		/* width: 30px; */
 		margin: 0;
 	}
 }
@@ -631,6 +653,12 @@ body{
 	align-items: center;
 	line-height: 1.2em;
 }
+@media(max-width:640px){
+	.caixa_rodape--creditos{
+		width: 100%;
+		font-size: 0.8em;
+	}
+}
 .creditos--vencedor{
 	font-family: Helvetica;
 	font-weight: bold;
@@ -639,13 +667,18 @@ body{
 }
 .creditos--desenvolvido{
 	font-family: Helvetica;
-	font-size:0.8em;
+	font-size:0.75em;
 }
 .caixa_rodape--logos{
 	width: 20vw;
 	height: auto;
 	display: flex;
 	justify-content: space-evenly;
+}
+@media(max-width:640px){
+	.caixa_rodape--logos{
+		margin: 7% 0 20% 0;
+	}
 }
 .rodape_logos{
 	width: 60px;
