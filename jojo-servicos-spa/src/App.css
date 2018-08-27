@@ -148,7 +148,7 @@ body{
 @media (max-width: 640px){
 	.caixa_inicial-descriçãoMobile{
 		display: block;
-		width: 221px;
+		width: 60vw;
 		margin: 20px 0 0 0;
 		font-family: Helvetica;
 		font-size: 4.5vw;
@@ -558,9 +558,10 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--descricao{
-    	width: 300px;
+    	width: 90%;
     	padding: 0 0 0 20px;
-		font-size: 4vw;
+		font-size: 3vw;
+		text-align: center;
 	}
 }
 .caixa_rodape--informações{
