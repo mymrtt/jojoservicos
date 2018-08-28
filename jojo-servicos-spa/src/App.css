@@ -605,7 +605,7 @@ body{
 }
 @media(max-width: 640px){
 	.caixa_rodape--contato{
-		width: 150px;
+		width: 50vw;
 		
 	}
 }
@@ -678,11 +678,19 @@ body{
 }
 @media(max-width:640px){
 	.caixa_rodape--logos{
+		width: 100%;
 		margin: 7% 0 20% 0;
+		
 	}
 }
 .rodape_logos{
-	width: 60px;
-	height: 30px;
+	width: 5vw;
+	height: 4vh;
 	margin-top: 20px;
+}
+@media(max-width:640px){
+	.rodape_logos{
+		width: 20vw;
+    	height: 5vh;
+	}
 }

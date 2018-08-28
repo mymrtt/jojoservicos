@@ -61,7 +61,7 @@ class App extends Component {
           </div>
           <div className="caixa_inicial-boot">
             <div className="caixa_inicial-perfil">
-              <img className="caixa_inicial-boot--img" src="./JOJO-ilst.jpg" alt="perfil" />
+              <img className="caixa_inicial-boot--img" src="./JOJO-ilst.png" alt="perfil" />
               {/* <p className="caixa_inicial-boot--p">Fale com a Jojô!</p> */}
             </div>
             <div className="caixa_inicial--dialogo">
