@@ -214,13 +214,14 @@ body{
 	}
 }
 .caixa_inicial-perfil{
-	width: 10vw;
-	height: 13vh;
-	margin-top: -30px;
+	width: 110px;
+	height: 140px;
+	/* margin-top: -30px; */
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
+	justify-content: flex-end;
+	align-items: center;
 	/* background-color: red; */
-	/*justify-content: flex-end;*/
 }
 @media(max-width: 640px){
 	.caixa_inicial-perfil{
