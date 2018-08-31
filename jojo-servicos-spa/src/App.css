@@ -86,8 +86,10 @@ body{
 }
 @media (max-width: 640px){
 	.caixa_inicial-boasvindas{
+		height: 270px;
 		margin:-90px 0 0 0;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 }
@@ -101,7 +103,7 @@ body{
 @media (max-width: 640px){
 	.caixa_inicial--bloco1{
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 
 	}
 }
@@ -149,7 +151,7 @@ body{
 	.caixa_inicial-descriçãoMobile{
 		display: block;
 		width: 60vw;
-		margin: 20px 0 0 0;
+		margin: 20px 0 20px 0;
 		font-family: Helvetica;
 		font-size: 4.5vw;
 		color: #FFFFFF;
@@ -197,8 +199,8 @@ body{
 	height: 20px;
 }
 .caixa_inicial-boot{
-	min-width: 50vw;
-	min-height: 55vh;
+	width: 40vw;
+	height: 55vh;
     margin: 7% 0;
 	border:solid none;
 	border-radius: 40px;
@@ -207,8 +209,8 @@ body{
 }
 @media (max-width: 640px){
 	.caixa_inicial-boot{
-		width: 90vw;
-		height: auto;
+		width: 85vw;
+		/* height: auto; */
 		margin-bottom: 60px;
 		border-radius: 50px;
 	}
@@ -216,32 +218,30 @@ body{
 .caixa_inicial-perfil{
 	width: 110px;
 	height: 140px;
-	/* margin-top: -30px; */
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: flex-end;
 	align-items: center;
-	/* background-color: red; */
 }
+
 @media(max-width: 640px){
 	.caixa_inicial-perfil{
-		min-width: 45vw;
-		margin-top: -30px;
+		width: 85px;
+		/* margin-top: -30px; */
 	}
 
 }
 .caixa_inicial-boot--img{
 	width: 90px;
 	height: 90px;
-	margin: -12% 0 0 -20%; 
+	/* margin: -12% 0 0 -20%;  */
 	border:solid #69B42E 5px;
 	border-radius: 50%;
 }
 @media(max-width: 640px){
 	.caixa_inicial-boot--img{
-		width: 90px;
-		height: 90px;
-		margin-left: 8px;
+		width: 70px;
+		height: 70px;
+		/* margin-left: 8px; */
 	}
 }
 .caixa_inicial--dialogo{
