@@ -216,8 +216,8 @@ body{
 	}
 }
 .caixa_inicial-perfil{
-	width: 110px;
-	height: 140px;
+	width: 85px;
+    height: 100px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -226,13 +226,12 @@ body{
 @media(max-width: 640px){
 	.caixa_inicial-perfil{
 		width: 85px;
-		/* margin-top: -30px; */
 	}
 
 }
 .caixa_inicial-boot--img{
-	width: 90px;
-	height: 90px;
+	width: 70px;
+	height: 70px;
 	/* margin: -12% 0 0 -20%;  */
 	border:solid #69B42E 5px;
 	border-radius: 50%;
