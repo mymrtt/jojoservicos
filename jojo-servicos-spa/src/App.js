@@ -22,7 +22,7 @@ class App extends Component {
         },
         { 
           emissor: "bot",
-          text: "Como posso te ajudar?",
+          text: "Como você se chama?",
           textId: 2
         }
       ]
@@ -31,18 +31,21 @@ class App extends Component {
   }
   enviarMensagemUsr(text){
     console.log(text);
-    sendUserSays(text)
+    sendUserSays(text, this.props.sessionId)
     .then(res => {
       console.log(res);
       console.log(res.data.result);
-      this.setState(
-        {
-          mensagens: [...this.state.mensagens, {
-            text: res.data.result.fulfillment.speech, 
-            textId: res.data.id, 
-            emissor:"bot"}]
-        }
-      );
+      let novasMensagens = res.data.result.fulfillment.messages.map(
+        (item, index) => {
+          return {
+          text: item.speech, 
+          textId: new Date().getTime() + '+' + index, 
+          emissor:"bot" }
+      });
+      let newState = {
+        mensagens: [...this.state.mensagens, ...novasMensagens]
+      };
+      this.setState( newState );
     });
     
     this.setState(
