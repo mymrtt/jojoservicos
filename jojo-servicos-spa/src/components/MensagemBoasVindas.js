@@ -21,7 +21,13 @@ const Mensagem = () =>
     <button className="caixa_inicial-indicacao">
      <img className="imgdeCompartilhar" src="share.png" />
       <p>Indique para um amigo</p>
-    </button>		
+    </button>
+    <div className="caixa_inicial--compartilhar">
+      <div className="compartilhar_icone">
+      </div>
+      <div className="compartilhar_icone"></div>
+      <div className="compartilhar_icone"></div>
+    </div>
   </div>;
 
 export default Mensagem;
