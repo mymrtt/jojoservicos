@@ -158,8 +158,12 @@ body{
 		line-height: 1.4em;
 	}
 }
+.caixa_inicial-box{
+	position: relative;
+}
 .caixa_inicial-indicacao{
 	width: 20vw;
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-evenly;
@@ -200,6 +204,7 @@ body{
 }
 .caixa_inicial--compartilhar{
 	width: 52%;
+	position: absolute;
 	height: 10vh;
 	margin-top: 10px;
 	/* background-color: rebeccapurple; */
