@@ -42,7 +42,9 @@ class Mensagem extends Component {
         { compartilhar  === true
         && <div className="caixa_inicial--compartilhar">
             <div className="compartilhar_icone">
-              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjojo-servicos.firebaseapp.com%2F&layout=button&size=small&mobile_iframe=true&width=97&height=20&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>      
+              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjojo-servicos.firebaseapp.com%2F&layout=button&size=small&mobile_iframe=true&width=97&height=20&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"><link rel="foto_src" 
+      type="foto.jpeg" 
+      ></link></iframe>      
             </div>
             <div className="compartilhar_icone">
               <a class="twitter-share-button"
