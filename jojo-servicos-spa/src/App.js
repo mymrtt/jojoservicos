@@ -14,6 +14,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = { 
+      compartilhar:false,
       mensagens: [
         {
           emissor: "bot",
@@ -26,6 +27,7 @@ class App extends Component {
           textId: 2
         }
       ]
+      
     };
     this.enviarMensagemUsr = this.enviarMensagemUsr.bind(this);
   }
@@ -54,6 +56,11 @@ class App extends Component {
       }
     );
   }
+  open = () => {
+    this.setState({
+      compartilhar: !this.state.compartilhar
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -71,14 +78,15 @@ class App extends Component {
             </div>
             <SenderBox funcaoEnviar={this.enviarMensagemUsr} />
           </div>
-          <div>
-            <div className="caixa_inicial-indicacao-mobile">
+          <div className="caixa_inicial--mobile">
+            <div className="caixa_inicial-indicacao-mobile " onClick={this.open}>
               <img className="imgdeCompartilhar" src="share.png" />
               <p>Indique para um amigo</p>
             </div>
-              <div className="caixa_inicial--compartilhar">
+            { this.state.compartilhar === true &&
+              <div className="caixa_inicial--compartilhar--mobile">
                 <div className="compartilhar_icone">
-                  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjojo-servicos.firebaseapp.com%2F&layout=button&size=small&mobile_iframe=true&width=97&height=20&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>      
+                  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fjojo-servicos.firebaseapp.com%2F&layout=button&size=small&mobile_iframe=true&width=5&height=20&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>      
                 </div>
                 <div className="compartilhar_icone">
                   <a class="twitter-share-button"
@@ -88,7 +96,8 @@ class App extends Component {
                   Tweetar</a>
                 </div>
               </div>
-            </div>
+            }
+           </div>
         </section>
         <Footer />
       </div>

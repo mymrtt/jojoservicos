@@ -180,20 +180,25 @@ body{
 	}
 }
 .caixa_inicial-indicacao-mobile{
-	width: 70vw;
-	display: none;
-	flex-direction: row;
-	justify-content:space-evenly;
-	color: #FFF;
-	font-family:Helvetica;
-	font-size: 15px;
-}
+	display: none;}
+
 @media(max-width:640px){
+	.caixa_inicial--mobile{
+		height: 80px;
+		/* background-color: pink; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.caixa_inicial-indicacao-mobile{
+		width: 65vw;
 		display: flex;
 		margin: 0;
-		/* margin-bottom: 15%; */
-		
+		flex-direction: row;
+		justify-content:space-evenly;
+		color: #FFF;
+		font-family:Helvetica;
+		font-size: 15px;
 	}
 }
 .imgdeCompartilhar{
@@ -208,25 +213,37 @@ body{
 	margin-top: 10px;
 	margin-left: 25px;
 	position: absolute;
-	/* background-color: rebeccapurple; */
 	display: flex;
 	align-items: flex-start;
 	justify-content:space-around;
 }
 @media(max-width:640px){
 	.caixa_inicial--compartilhar{
-		width: 100%;
-		position: relative;
-		margin: 20px 16px;
-		display: flex;
-		justify-content: space-around;
-		/* background-color: black; */
+		display: none;
 	}
-	
+}
+.caixa_inicial--compartilhar--mobile{
+	display: none;
+}
+@media(max-width:640px){
+	.caixa_inicial--compartilhar--mobile{
+		/* width: 50%; */
+		height: 40px;
+		display: flex;
+		margin: 20px 0 0 17px;
+		align-items: flex-start
+	}
 }
 .compartilhar_icone{
 	width: 97px;
 	margin-right: 5px;
+}
+@media(max-width:640px){
+	.compartilhar_icone{
+		width: 120px;
+		margin:0;
+		/* background-color: rebeccapurple; */
+	}
 }
 .twitter-share-button{
 	width: 74px;
@@ -731,7 +748,7 @@ body{
 	}
 }
 .rodape_logos{
-	width: 5vw;
+	width: 4vw;
 	height: 4vh;
 	margin-top: 20px;
 }
