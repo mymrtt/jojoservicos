@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import MensagemBoasVindas from './components/MensagemBoasVindas';
 import SenderBox from './components/SenderBox';
 import Conversacao from './components/Conversacao';
+import Admjojo from './components/Admjojo';
 
 class App extends Component {
   constructor(props){
@@ -64,7 +65,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        {/* <Header />
         <section className="caixa_inicial">
           <div className="caixa_inicial-boasvindas">
             <MensagemBoasVindas />
@@ -99,7 +100,8 @@ class App extends Component {
             }
            </div>
         </section>
-        <Footer />
+        <Footer /> */}
+        <Admjojo/>
       </div>
     );
   }
