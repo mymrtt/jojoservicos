@@ -18,6 +18,7 @@ const Section = styled.section`
   background: linear-gradient(#2E7BB4,#306BAD, #3260A8, #3358A4);
   @media(max-width: 640px){
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     border-top: 4px solid #69B42E;
@@ -49,7 +50,7 @@ const Container_login = styled.div`
     /* width: 339px;
     height: 400px; */
     width: 90%;
-    height: 75%;
+    height: 70%;
   }
 `;
 
