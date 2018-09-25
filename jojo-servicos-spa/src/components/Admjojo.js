@@ -48,9 +48,9 @@ const Container_login = styled.div`
   border-radius: 55px;
   @media(max-width: 640px){
     /* width: 339px;
-    height: 400px; */
+    height: 70%; */
     width: 90%;
-    height: 70%;
+    height: 400px;
   }
 `;
 
