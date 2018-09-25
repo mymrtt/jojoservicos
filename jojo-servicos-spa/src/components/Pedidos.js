@@ -1,6 +1,13 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Status from './Status';
+import Pendencias from './Pendencias';
+import Cliente from './Cliente';
+import Entrada from './Entrada';
+import Categoria from './Categoria';
+import Tema from './Tema';
+import Tipo from './Tipo';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -29,14 +36,36 @@ const Pedidos = () =>
     <Section>
       <h1>Pedidos:</h1>
       <div>
-        <p>Status</p>
-        <p>Tema</p>
-        <p>Categoria</p>
-        <p>Tipo</p>
-        <p>Cliente</p>
-        <p>Entrada</p>
-        <p>Pendências</p>
-        <p>Mensagens</p>
+        <div>
+          <p><Status /></p>
+          <p>Tema</p>
+          <p>Categoria</p>
+          <p>Tipo</p>
+          <p>Cliente</p>
+          <p>Entrada</p>
+          <p>Pendências</p>
+          <p>Mensagens</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <Tema />
+        </div>
+        <div> 
+          <Categoria />
+        </div>
+        <div>
+          <Tipo />
+        </div>
+        <div>
+          <Cliente />
+        </div>
+        <div>
+          <Entrada />
+        </div>
+        <div>
+          <Pendencias />
+        </div>
       </div>
     </Section>
     <Footer />
