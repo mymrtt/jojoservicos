@@ -33,7 +33,7 @@ const Titulo_topo = styled.h1`
   font-size: 40px;
   font-family: Helvetica, Bold;
   @media(max-width: 640px){
-    width: 332px;
+    width: 319px;
     font-size: 27px;
   }
 `;

@@ -10,6 +10,8 @@ import MensagemBoasVindas from './components/MensagemBoasVindas';
 import SenderBox from './components/SenderBox';
 import Conversacao from './components/Conversacao';
 import Admjojo from './components/Admjojo';
+import Pedidos from './components/Pedidos';
+
 
 class App extends Component {
   constructor(props){
