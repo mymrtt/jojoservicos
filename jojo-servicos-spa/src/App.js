@@ -101,7 +101,7 @@ class App extends Component {
            </div>
         </section>
         <Footer /> */}
-        <Admjojo/>
+        <Admjojo />
       </div>
     );
   }

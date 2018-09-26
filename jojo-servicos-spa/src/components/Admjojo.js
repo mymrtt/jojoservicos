@@ -33,7 +33,8 @@ const Titulo_topo = styled.h1`
   text-align: center;
   color: #fff;
   font-size: 40px;
-  font-family: Helvetica, Bold;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
   @media(max-width: 640px){
     width: 319px;
     font-size: 27px;
