@@ -21,6 +21,7 @@ const Section = styled.section`
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     border-top: 4px solid #69B42E;
     border-bottom: 4px solid #69B42E;
@@ -51,13 +52,13 @@ const Container_login = styled.div`
     /* width: 339px;
     height: 70%; */
     width: 90%;
-    height: 400px;
+    height: 64%;
   }
 `;
 
 const Container_login_items = styled.div`
   width: 100%;
-  height: 320px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +126,8 @@ const Container_entrar_items = styled.div`
   align-items: center;
   @media(max-width: 640px){
     width: 94%;
+    height: 15%;
+    align-self: flex-end;
   }
 `;
 
@@ -141,6 +144,7 @@ const Button_entrar = styled.button`
     height: 40px; */
     width: 45%;
     height: 6vh;
+    font-family: Museo;
   }
 `;
 
